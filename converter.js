@@ -219,11 +219,21 @@ function getDeliveryHTML(options) {
           </td>
         </tr>
       </table>
-      <table style="table-layout: fixed; width: 100%; border-top: 3px solid #000; margin-top: 10px; padding-top: 15px">
+      <table
+        style="
+          table-layout: fixed;
+          width: 100%;
+          border-top: 2px solid #000;
+          margin-top: 10px;
+          padding-top: 15px;
+          padding-left: 10px;
+          padding-right: 10px;
+        "
+      >
         <tr>
           <td></td>
           <td>
-            <p class="s1" style="margin-bottom: 10px; text-decoration: underline; font-weight: bold">INVOICE</p>
+            <p class="s1" style="margin-bottom: 2px; text-decoration: underline; font-weight: bold; font-size:20pt;">INVOICE</p>
           </td>
         </tr>
         <tr>
@@ -271,709 +281,788 @@ function getDeliveryHTML(options) {
           </td>
         </tr>
       </table>
-      <table style="table-layout: fixed; width: 100%; border-top: 3px solid #000; margin-top: 10px; padding-top: 15px"></table>
-      <h2 style="padding-top: 1pt; padding-left: 11pt; text-indent: 0pt; text-align: center">PRESCRIPTION</h2>
-      <table style="table-layout: fixed; width: 100%">
-        <tr>
-          <td>
-            <h3 style="padding-left: 1pt; text-indent: 0pt; text-align: center">RIGHT EYE (OD)</h3>
-          </td>
-          <td>
-            <h3 style="padding-left: 1pt; text-indent: 0pt; text-align: center">LEFT EYE (OS)</h3>
-          </td>
-        </tr>
-      </table>
-      <table style="border-collapse: collapse; margin-left: 5.4pt; width: 98%" cellspacing="0">
-        <tr style="height: 15pt">
-          <td
-            style="
-              width: 35pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p style="text-indent: 0pt; text-align: left"><br /></p>
-          </td>
-          <td
-            style="
-              width: 78pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
-              SPH
-            </p>
-          </td>
-          <td
-            style="
-              width: 78pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
-              CYL
-            </p>
-          </td>
-          <td
-            style="
-              width: 76pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 2pt;
-              border-right-color: black;
-            "
-          >
-            <p class="s6" style="padding-left: 24pt; text-indent: 0pt; line-height: 14pt; text-align: left">AXIS</p>
-          </td>
-          <td
-            style="
-              width: 2pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 2pt;
-              border-right-color: black;
-            "
-          >
-            <p style="text-indent: 0pt; text-align: left"><br /></p>
-          </td>
-          <td
-            style="
-              width: 38pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 2pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p style="text-indent: 0pt; text-align: left"><br /></p>
-          </td>
-          <td
-            style="
-              width: 78pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
-              SPH
-            </p>
-          </td>
-          <td
-            style="
-              width: 77pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 24pt; padding-right: 23pt; text-indent: 0pt; line-height: 14pt; text-align: center">
-              CYL
-            </p>
-          </td>
-          <td
-            style="
-              width: 79pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
-              AXIS
-            </p>
-          </td>
-        </tr>
-        <tr style="height: 15pt">
-          <td
-            style="
-              width: 35pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              DV
-            </p>
-          </td>
-          <td
-            style="
-              width: 78pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              +0.75
-            </p>
-          </td>
-          <td
-            style="
-              width: 78pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              -0.20
-            </p>
-          </td>
-          <td
-            style="
-              width: 76pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 2pt;
-              border-right-color: black;
-            "
-          >
-            <p class="s7" style="padding-left: 23pt; text-indent: 0pt; line-height: 25pt; text-align: left">-0.40</p>
-          </td>
-          <td
-            style="
-              width: 2pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 2pt;
-              border-right-color: black;
-            "
-          >
-            <p style="text-indent: 0pt; text-align: left"><br /></p>
-          </td>
-          <td
-            style="
-              width: 38pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 2pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 6pt; padding-right: 5pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              DV
-            </p>
-          </td>
-          <td
-            style="
-              width: 78pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              -0.67
-            </p>
-          </td>
-          <td
-            style="
-              width: 77pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              +0.40
-            </p>
-          </td>
-          <td
-            style="
-              width: 79pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              -0.05
-            </p>
-          </td>
-        </tr>
-  
-        <tr style="height: 15pt">
-          <td
-            style="
-              width: 35pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              ADD
-            </p>
-          </td>
-          <td
-            style="
-              width: 78pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              +1.25
-            </p>
-          </td>
-          <td
-            style="
-              width: 78pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              PD
-            </p>
-          </td>
-          <td
-            style="
-              width: 76pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 2pt;
-              border-right-color: black;
-            "
-          >
-            <p class="s7" style="padding-left: 23pt; text-indent: 0pt; line-height: 25pt; text-align: left">-1.68</p>
-          </td>
-          <td
-            style="
-              width: 2pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 2pt;
-              border-right-color: black;
-            "
-          >
-            <p style="text-indent: 0pt; text-align: left"><br /></p>
-          </td>
-          <td
-            style="
-              width: 38pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 2pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 6pt; padding-right: 5pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              ADD
-            </p>
-          </td>
-          <td
-            style="
-              width: 78pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              -3.45
-            </p>
-          </td>
-          <td
-            style="
-              width: 77pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 24pt; padding-right: 23pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              PD
-            </p>
-          </td>
-          <td
-            style="
-              width: 79pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 23pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center">
-              +2.5
-            </p>
-          </td>
-        </tr>
-      </table>
-      <p style="text-indent: 0pt; text-align: left"><br /></p>
-      <table style="border-collapse: collapse; margin-left: 5.4pt; width: 98%" cellspacing="0">
-        <tr style="height: 15pt">
-          <td
-            style="
-              width: 56pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">SL NO</p>
-          </td>
-          <td
-            style="
-              width: 291pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">PRODUCT DETAILS</p>
-          </td>
-          <td
-            style="
-              width: 85pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">QTY</p>
-          </td>
-          <td
-            style="
-              width: 106pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">PRICE</p>
-          </td>
-        </tr>
-        <tr style="height: 30pt">
-          <td
-            style="
-              width: 56pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">1</p>
-          </td>
-          <td
-            style="
-              width: 291pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 5pt; text-indent: 0pt; line-height: 15pt; text-align: left">
-              VINCENT CHASE EYEWEAR Unisex Adult Aviator Polarization Sunglasses
-            </p>
-          </td>
-          <td
-            style="
-              width: 85pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">2.00</p>
-          </td>
-          <td
-            style="
-              width: 106pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">200.00</p>
-          </td>
-        </tr>
-        <tr style="height: 30pt">
-          <td
-            style="
-              width: 56pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">2</p>
-          </td>
-          <td
-            style="
-              width: 291pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 5pt; text-indent: 0pt; line-height: 15pt; text-align: left">
-              LENSKART BLU | Zero Power Blue Cut Computer Glasses
-            </p>
-            <p class="s7" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">
-              | Anti Glare, Lightweight |
-            </p>
-          </td>
-          <td
-            style="
-              width: 85pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">2.00</p>
-          </td>
-          <td
-            style="
-              width: 106pt;
-              border-top-style: solid;
-              border-top-width: 1pt;
-              border-left-style: solid;
-              border-left-width: 1pt;
-              border-bottom-style: solid;
-              border-bottom-width: 1pt;
-              border-right-style: solid;
-              border-right-width: 1pt;
-            "
-          >
-            <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">333.00</p>
-          </td>
-        </tr>
-      </table>
-      <p style="text-indent: 0pt; text-align: left"><br /></p>
-      <table style="table-layout: fixed; width: 100%">
-        <tr>
-          <td>
-            <h3 style="text-indent: 0pt; line-height: 17pt">
-              <p class="s8" style="padding-top: 9pt; margin-left: 5.4pt">
-                <span class="h4"> Total Paid : 1,066.00</span>
+      <table style="table-layout: fixed; width: 100%; border-top: 2px solid #000; margin-top: 10px; padding-top: 15px"></table>
+      <div style="padding-right: 10px; padding-left: 10px;">
+        <h2 style="padding-top: 1pt; padding-left: 11pt; text-indent: 0pt; text-align: center">PRESCRIPTION</h2>
+        <table style="table-layout: fixed; width: 100%">
+          <tr>
+            <td>
+              <h3 style="padding-left: 1pt; text-indent: 0pt; text-align: center">RIGHT EYE (OD)</h3>
+            </td>
+            <td>
+              <h3 style="padding-left: 1pt; text-indent: 0pt; text-align: center">LEFT EYE (OS)</h3>
+            </td>
+          </tr>
+        </table>
+        <table style="border-collapse: collapse; margin-left: 5.4pt; width: 98%" cellspacing="0">
+          <tr style="height: 15pt">
+            <td
+              style="
+                width: 35pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p style="text-indent: 0pt; text-align: left"><br /></p>
+            </td>
+            <td
+              style="
+                width: 78pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s6"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center"
+              >
+                SPH
               </p>
-            </h3>
-          </td>
-          <td>
-            <h3 style="text-indent: 0pt; line-height: 17pt">
-              <p class="s8" style="padding-top: 9pt; text-align: right">
-                <span class="h4" style="padding-right: 15px"> Net Total Amount : 1,119.30</span>
+            </td>
+            <td
+              style="
+                width: 78pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s6"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center"
+              >
+                CYL
               </p>
-            </h3>
-          </td>
-        </tr>
-      </table>
+            </td>
+            <td
+              style="
+                width: 76pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 2pt;
+                border-right-color: black;
+              "
+            >
+              <p class="s6" style="padding-left: 24pt; text-indent: 0pt; line-height: 14pt; text-align: left">AXIS</p>
+            </td>
+            <td
+              style="
+                width: 2pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 2pt;
+                border-right-color: black;
+              "
+            >
+              <p style="text-indent: 0pt; text-align: left"><br /></p>
+            </td>
+            <td
+              style="
+                width: 38pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 2pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p style="text-indent: 0pt; text-align: left"><br /></p>
+            </td>
+            <td
+              style="
+                width: 78pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s6"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center"
+              >
+                SPH
+              </p>
+            </td>
+            <td
+              style="
+                width: 77pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s6"
+                style="padding-left: 24pt; padding-right: 23pt; text-indent: 0pt; line-height: 14pt; text-align: center"
+              >
+                CYL
+              </p>
+            </td>
+            <td
+              style="
+                width: 79pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s6"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center"
+              >
+                AXIS
+              </p>
+            </td>
+          </tr>
+          <tr style="height: 15pt">
+            <td
+              style="
+                width: 35pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s6" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 25pt; text-align: center">
+                DV
+              </p>
+            </td>
+            <td
+              style="
+                width: 78pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s7"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center"
+              >
+                +0.75
+              </p>
+            </td>
+            <td
+              style="
+                width: 78pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s7"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center"
+              >
+                -0.20
+              </p>
+            </td>
+            <td
+              style="
+                width: 76pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 2pt;
+                border-right-color: black;
+              "
+            >
+              <p class="s7" style="padding-left: 23pt; text-indent: 0pt; line-height: 25pt; text-align: left">-0.40</p>
+            </td>
+            <td
+              style="
+                width: 2pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 2pt;
+                border-right-color: black;
+              "
+            >
+              <p style="text-indent: 0pt; text-align: left"><br /></p>
+            </td>
+            <td
+              style="
+                width: 38pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 2pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s6" style="padding-left: 6pt; padding-right: 5pt; text-indent: 0pt; line-height: 25pt; text-align: center">
+                DV
+              </p>
+            </td>
+            <td
+              style="
+                width: 78pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s7"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center"
+              >
+                -0.67
+              </p>
+            </td>
+            <td
+              style="
+                width: 77pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s7"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center"
+              >
+                +0.40
+              </p>
+            </td>
+            <td
+              style="
+                width: 79pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s7"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center"
+              >
+                -0.05
+              </p>
+            </td>
+          </tr>
   
-      <p style="text-indent: 0pt; text-align: left"><br /></p>
-      <p style="padding-top: 2pt; padding-left: 5pt; text-indent: 0pt; text-align: left">Working hours 9.30 AM to 8 PM</p>
-      <p style="padding-top: 9pt; padding-left: 5pt; text-indent: 0pt; text-align: left">
-        N.B: To be produce for collection. Please collect the article within 30 days from delivery date
-      </p>
-      <p style="text-indent: 0pt; text-align: left"><br /></p>
-      <p class="s9" style="padding-top: 2pt; text-indent: 0pt; text-align: right; padding-right: 15px">AUTHORISED SIGNATORY</p>
-      <p style="text-indent: 0pt; text-align: left"><br /></p>
-      <p class="s10" style="padding-top: 2pt; padding-left: 11pt; text-indent: 0pt; text-align: center">SUNDAY HOLIDAY</p>
+          <tr style="height: 15pt">
+            <td
+              style="
+                width: 35pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s6" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 25pt; text-align: center">
+                ADD
+              </p>
+            </td>
+            <td
+              style="
+                width: 78pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s7"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center"
+              >
+                +1.25
+              </p>
+            </td>
+            <td
+              style="
+                width: 78pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s6"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center"
+              >
+                PD
+              </p>
+            </td>
+            <td
+              style="
+                width: 76pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 2pt;
+                border-right-color: black;
+              "
+            >
+              <p class="s7" style="padding-left: 23pt; text-indent: 0pt; line-height: 25pt; text-align: left">-1.68</p>
+            </td>
+            <td
+              style="
+                width: 2pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 2pt;
+                border-right-color: black;
+              "
+            >
+              <p style="text-indent: 0pt; text-align: left"><br /></p>
+            </td>
+            <td
+              style="
+                width: 38pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 2pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s6" style="padding-left: 6pt; padding-right: 5pt; text-indent: 0pt; line-height: 25pt; text-align: center">
+                ADD
+              </p>
+            </td>
+            <td
+              style="
+                width: 78pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s7"
+                style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center"
+              >
+                -3.45
+              </p>
+            </td>
+            <td
+              style="
+                width: 77pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s6"
+                style="padding-left: 24pt; padding-right: 23pt; text-indent: 0pt; line-height: 25pt; text-align: center"
+              >
+                PD
+              </p>
+            </td>
+            <td
+              style="
+                width: 79pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p
+                class="s7"
+                style="padding-left: 23pt; padding-right: 24pt; text-indent: 0pt; line-height: 25pt; text-align: center"
+              >
+                +2.5
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p style="text-indent: 0pt; text-align: left"><br /></p>
+        <table style="border-collapse: collapse; margin-left: 5.4pt; width: 98%" cellspacing="0">
+          <tr style="height: 15pt">
+            <td
+              style="
+                width: 56pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">SL NO</p>
+            </td>
+            <td
+              style="
+                width: 291pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">PRODUCT DETAILS</p>
+            </td>
+            <td
+              style="
+                width: 85pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">QTY</p>
+            </td>
+            <td
+              style="
+                width: 106pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">PRICE</p>
+            </td>
+          </tr>
+          <tr style="height: 30pt">
+            <td
+              style="
+                width: 56pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">1</p>
+            </td>
+            <td
+              style="
+                width: 291pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s7" style="padding-left: 5pt; text-indent: 0pt; line-height: 15pt; text-align: left">
+                VINCENT CHASE EYEWEAR Unisex Adult Aviator Polarization Sunglasses
+              </p>
+            </td>
+            <td
+              style="
+                width: 85pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">2.00</p>
+            </td>
+            <td
+              style="
+                width: 106pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">200.00</p>
+            </td>
+          </tr>
+          <tr style="height: 30pt">
+            <td
+              style="
+                width: 56pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">2</p>
+            </td>
+            <td
+              style="
+                width: 291pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s7" style="padding-left: 5pt; text-indent: 0pt; line-height: 15pt; text-align: left">
+                LENSKART BLU | Zero Power Blue Cut Computer Glasses
+              </p>
+              <p class="s7" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">
+                | Anti Glare, Lightweight |
+              </p>
+            </td>
+            <td
+              style="
+                width: 85pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">2.00</p>
+            </td>
+            <td
+              style="
+                width: 106pt;
+                border-top-style: solid;
+                border-top-width: 1pt;
+                border-left-style: solid;
+                border-left-width: 1pt;
+                border-bottom-style: solid;
+                border-bottom-width: 1pt;
+                border-right-style: solid;
+                border-right-width: 1pt;
+              "
+            >
+              <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">333.00</p>
+            </td>
+          </tr>
+        </table>
+        <p style="text-indent: 0pt; text-align: left"><br /></p>
+        <table style="table-layout: fixed; width: 100%">
+          <tr>
+            <td>
+              <h3 style="text-indent: 0pt; line-height: 17pt">
+                <p class="s8" style="padding-top: 9pt; margin-left: 5.4pt">
+                  <span class="h4"> Total Paid : 1,066.00</span>
+                </p>
+              </h3>
+            </td>
+            <td>
+              <h3 style="text-indent: 0pt; line-height: 17pt">
+                <p class="s8" style="padding-top: 9pt; text-align: right">
+                  <span class="h4" style="padding-right: 15px"> Net Total Amount : 1,119.30</span>
+                </p>
+              </h3>
+            </td>
+          </tr>
+        </table>
+  
+        <p style="text-indent: 0pt; text-align: left"><br /></p>
+        <p style="padding-top: 2pt; padding-left: 5pt; text-indent: 0pt; text-align: left">Working hours 9.30 AM to 8 PM</p>
+        <p style="padding-top: 9pt; padding-left: 5pt; text-indent: 0pt; text-align: left">
+          N.B: To be produce for collection. Please collect<br/> the article within 30 days from delivery date
+        </p>
+        <p style="text-indent: 0pt; text-align: left"><br /></p>
+        <p class="s9" style="padding-top: 2pt; text-indent: 0pt; text-align: right; padding-right: 15px">AUTHORISED SIGNATORY</p>
+        <p style="text-indent: 0pt; text-align: left"><br /></p>
+        <p class="s10" style="padding-top: 2pt; padding-left: 11pt; text-indent: 0pt; text-align: center">SUNDAY HOLIDAY</p>
+      </div>
     </body>
-  </html>  
+  </html>
   `;
 }
+
+// async function getInvoice(options) {
+//   return new Promise(async (resolve, reject) => {
+//     try {
+//       const html = getDeliveryHTML(options);
+//       const htmlToPDF = new HTMLToPDF(
+//         `
+//         <html>
+//           <body>
+//             <p>testing</p>
+//           </body>
+//         </html>
+//         `
+//       );
+
+//       const pdf = await htmlToPDF.convert({
+//         waitForNetworkIdle: true,
+//         browserOptions: { defaultViewport: { width: 1920, height: 1080 } },
+//         pdfOptions: { height: 1200, width: 900, timeout: 0 }
+//       });
+//       resolve(pdf);
+//     } catch (err) {
+//       reject(err);
+//     }
+//   });
+// }
+
+const puppeteer = require('puppeteer');
 
 async function getInvoice(options) {
   return new Promise(async (resolve, reject) => {
     try {
       const html = getDeliveryHTML(options);
-      const htmlToPDF = new HTMLToPDF(html);
 
-      const pdf = await htmlToPDF.convert({
-        waitForNetworkIdle: true,
-        browserOptions: { defaultViewport: { width: 1920, height: 1080 } },
-        pdfOptions: { height: 1200, width: 900, timeout: 0 }
+      const browser = await puppeteer.launch();
+      const page = await browser.newPage();
+      await page.setContent(html);
+
+      const pdf = await page.pdf({
+        format: 'A4',
+        printBackground: true // Include background colors and images
       });
+
+      await browser.close();
       resolve(pdf);
     } catch (err) {
       reject(err);

@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+      }
+      .s1 {
+        color: black;
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 22pt;
+      }
+      .s2 {
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+      }
+      .s3 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 15pt;
+      }
+      a {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 15pt;
+      }
+      h1 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 22pt;
+      }
+      .s4 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14pt;
+      }
+      .s5 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 14pt;
+      }
+      h2 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 18pt;
+      }
+      h3 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16pt;
+      }
+      .s6 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12pt;
+      }
+      .s7 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+      }
+      .s8 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12pt;
+        vertical-align: 3pt;
+      }
+      .h4 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 15pt;
+      }
+      p {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+        margin: 0pt;
+      }
+      .s9 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12pt;
+      }
+      .s10 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: underline;
+        font-size: 12pt;
+      }
+      table,
+      tbody {
+        vertical-align: top;
+        overflow: visible;
+      }
+      @media print {
+        body {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <p style="text-indent: 0pt; text-align: left">
+            <span
+              ><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                    <img
+                      width="226"
+                      height="112"
+                      src="data:image/jpg;base64,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"
+                    />
+                  </td>
+                </tr></table
+            ></span>
+          </p>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <p class="s1" style="padding-top: 3pt; padding-left: 310pt; text-indent: 0pt; text-align: left">
+                  Majestic Opticals
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  width="20"
+                  height="24"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAMAAADNlS1EAAADAFBMVEUAAAABAQECAgIDAwMEBAQFBQUGBgYHBwcICAgJCQkKCgoLCwsMDAwNDQ0ODg4PDw8QEBARERESEhITExMUFBQVFRUWFhYXFxcYGBgZGRkaGhobGxscHBwdHR0eHh4fHx8gICAgICAiIiIjIyMkJCQkJCQmJiYnJycoKCgoKCgqKiorKyssLCwsLCwuLi4vLy8wMDAwMDAyMjIzMzM0NDQ0NDQ2NjY3Nzc4ODg4ODg6Ojo7Ozs8PDw8PDw+Pj4/Pz9AQEBBQUFBQUFDQ0NERERFRUVGRkZHR0dISEhJSUlJSUlLS0tMTExNTU1OTk5PT09QUFBRUVFRUVFTU1NUVFRVVVVWVlZXV1dYWFhZWVlZWVlbW1tcXFxdXV1eXl5fX19gYGBhYWFhYWFjY2NkZGRlZWVmZmZnZ2doaGhpaWlpaWlra2tsbGxtbW1ubm5vb29wcHBxcXFxcXFzc3N0dHR1dXV2dnZ3d3d4eHh5eXl5eXl7e3t8fHx9fX1+fn5/f3+AgICBgYGCgoKDg4ODg4OFhYWGhoaHh4eIiIiJiYmKioqLi4uMjIyNjY2Ojo6Pj4+QkJCRkZGSkpKTk5OTk5OVlZWWlpaXl5eYmJiZmZmampqbm5ucnJydnZ2enp6fn5+goKChoaGioqKjo6Ojo6OlpaWmpqanp6eoqKipqamqqqqrq6usrKytra2urq6vr6+wsLCxsbGysrKzs7Ozs7O1tbW2tra3t7e4uLi5ubm6urq7u7u8vLy9vb2+vr6/v7/AwMDBwcHCwsLDw8PDw8PFxcXGxsbHx8fIyMjJycnKysrLy8vMzMzNzc3Ozs7Pz8/Q0NDR0dHS0tLT09PT09PV1dXW1tbX19fY2NjZ2dna2trb29vc3Nzd3d3e3t7f39/g4ODh4eHi4uLj4+Pj4+Pl5eXm5ubn5+fo6Ojp6enq6urr6+vs7Ozt7e3u7u7v7+/w8PDx8fHy8vLz8/Pz8/P19fX29vb39/f4+Pj5+fn6+vr7+/v8/Pz9/f3+/v7///8OeeLkAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAT9JREFUGJVVkL9KA0EQxr/du/gHRbDzD6SQgJ0WBgn4Cqay9RGsU1mkVasg1oJv4APYGFIJdmJjc9gpIlEU7nZm1pm9GHHZO+b7+H6zswuJUSjw6KDV7PQ/qyBRIpL50WnAOfjFS1IdoR+P18xCBucHyWQR7sKrdmk/qgFhKTTitu+eT+cA1xYzhXvIsVMyV8PcYf6rNrc0cEOKUUuR+xrf0EMKtrWn1W1IZkeTVyxcVusAHoQMP9dy+S0wnWixVLL1lPcGvF84Otv1gD+0kXRW6cMhc/qDmxmnkdT8XoE5mnMDmZhM1wraRX2zUo8TLqGtN0Se+VEg1SkpUvgcPsv2madPJ8TH9hyzrzx9OutdrTqPC6smuG0eOr8ZapFwCxN1syeqRcLrDi+9dEj8w20xcfyHT9K/uFWSOJ0siSg/ndY+tLFU3O8AAAAASUVORK5CYIIA"
+                />
+              </td>
+              <td><span class="s3">Opp Plaza Tourist Home,</span></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span class="s3">Kannur - 670001, Kerala</span></td>
+            </tr>
+          </table>
+          <p class="s2" style="padding-top: 3pt; padding-left: 320pt; text-indent: -61pt; text-align: left">
+            <span
+              ><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td></td>
+                </tr></table
+            ></span>
+          </p>
+          <p class="s2" style="padding-left: 257pt; text-indent: 0pt; text-align: left">
+            <span
+              ><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                    <img
+                      width="24"
+                      height="24"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAA1BMVEUAAACnej3aAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABNElEQVRIieXVsS5EQRTG8d8SshEJySqJio5Wo/ECKHUKBaVKo1AqPIJKKV6BB9Bo9BKNBsXaBBvZvYq5mzt3szexe68ofMlkJpPJ9585c+YMf6RJzKD2G+YneMcXtqs230GCbtq/ol6V+TieUuNe6+KoKsDSAPNECFdjVNOxaDwdjRPZBdexNSog1oJs13F/VoU5YccPqWmv7ZU1jUOU4DyC1XBXFtCvBj5lF30vZFelupLPpIOqAVNoRpA2VqqGbMgyKcEbVgvWLmN2FMhhH+QDu/IFcF2oWU3syyfNj3SKjvy7uBXezCJa8vf1mEKHqsLHfSdJUmhnwHwPVBTOQm0KNWlQreqN41PODwuAOdwIMS8yToQQlvqoFnCBZ/lTtHGJiXhx2S9xTYh3C9d4Ken3H/UNy0JtlX15244AAAAASUVORK5CYIIA"
+                    />
+                  </td>
+                </tr></table
+            ></span>
+            <span class="s3">9447969366</span>
+          </p>
+          <p style="padding-top: 2pt; padding-left: 258pt; text-indent: 0pt; text-align: left">
+            <span
+              ><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                    <img
+                      width="22"
+                      height="17"
+                      src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAARABYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD6R8P6Poj+HPDXj/4laFH4k8PeJrRbvU/Et1cTyS6NdyyOwEqF9kdjtaONTGqiHZl8q7SJ6z4u+DPwX8CeGrvX9b8OadZaXbKGabMrlyxCoiKrFnd2KqqKCzMwABJArzjwBr0/i34XeGfhumuWXhXSdOsDp3irUpdQhiv0ljd4ptOgiLb4pDsJedgNsboYtzOHj3H+BHgHyoraH4n31vp2jss3hSxXWojH4bmByJIckmbBG1VnMipGzxqAjEFAeYfFHX/En7OnhTS/HXhzRY/Atxrl7LZJ4ZaeSeNLMojxSXcTSNGLsGNyTEAFWYxkybQ9FJ+0vfeJ/jd4R0DwVDZ2GtePNLvZru5i8PXUdxBd2aRqgvkUOzQo7TKvly4YOsgUyKm8lIDnP22P+S2z/wDXjB/I14HRRQwPtz9gX/kTPE//AF/R/wDoFFFFUB//2QAA"
+                    />
+                  </td>
+                </tr></table></span
+            ><a
+              href="mailto:majesticoptical@gmail.com"
+              style="
+                color: black;
+                font-family: 'Times New Roman', serif;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: none;
+                font-size: 10pt;
+              "
+              target="_blank"
+            >
+            </a
+            ><a href="mailto:majesticoptical@gmail.com" target="_blank">majesticoptical@gmail.com</a>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p style="text-indent: 0pt; text-align: left"></p>
+    <h1 style="padding-left: 279pt; text-indent: 0pt; line-height: 27pt; text-align: left">INVOICE</h1>
+    <p class="s4" style="padding-left: 10pt; text-indent: 0pt; line-height: 17pt; text-align: left">
+      Customer Name : <span class="s5">Daniel Joseph </span>Invoice Number : <span class="s5">AHSN-2014-00360</span>
+    </p>
+    <p class="s4" style="padding-left: 10pt; text-indent: 0pt; text-align: left">
+      Mobile Number : <span class="s5">9056189015 </span>Invoice Date : <span class="s5">26/01/2024</span>
+    </p>
+    <p class="s4" style="padding-left: 10pt; text-indent: 0pt; text-align: left">
+      Address : <span class="s5">Parambakkal House, Pazhayangadi </span>Date Of Order : <span class="s5">31/01/2024</span>
+    </p>
+    <p style="text-indent: 0pt; text-align: left"></p>
+    <p class="s4" style="padding-left: 279pt; text-indent: 0pt; text-align: left">
+      Date Of Delivery : <span class="s5">10/02/2024</span>
+    </p>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <h2 style="padding-top: 1pt; padding-left: 11pt; text-indent: 0pt; text-align: center">PRESCRIPTION</h2>
+    <h3 style="padding-left: 1pt; text-indent: 0pt; text-align: center">RIGHT EYE (OD) LEFT EYE (OS)</h3>
+    <table style="border-collapse: collapse; margin-left: 5.4pt" cellspacing="0">
+      <tr style="height: 15pt">
+        <td
+          style="
+            width: 35pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p style="text-indent: 0pt; text-align: left"><br /></p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            SPH
+          </p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            CYL
+          </p>
+        </td>
+        <td
+          style="
+            width: 76pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 2pt;
+          "
+        >
+          <p class="s6" style="padding-left: 24pt; text-indent: 0pt; line-height: 14pt; text-align: left">AXIS</p>
+        </td>
+        <td
+          style="
+            width: 38pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 2pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p style="text-indent: 0pt; text-align: left"><br /></p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            SPH
+          </p>
+        </td>
+        <td
+          style="
+            width: 77pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 24pt; padding-right: 23pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            CYL
+          </p>
+        </td>
+        <td
+          style="
+            width: 79pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            AXIS
+          </p>
+        </td>
+      </tr>
+      <tr style="height: 15pt">
+        <td
+          style="
+            width: 35pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            DV
+          </p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            +0.75
+          </p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            -0.20
+          </p>
+        </td>
+        <td
+          style="
+            width: 76pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 2pt;
+          "
+        >
+          <p class="s7" style="padding-left: 23pt; text-indent: 0pt; line-height: 14pt; text-align: left">-0.40</p>
+        </td>
+        <td
+          style="
+            width: 38pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 2pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 6pt; padding-right: 5pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            DV
+          </p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            -0.67
+          </p>
+        </td>
+        <td
+          style="
+            width: 77pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            +0.40
+          </p>
+        </td>
+        <td
+          style="
+            width: 79pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            -0.05
+          </p>
+        </td>
+      </tr>
+      <tr style="height: 15pt">
+        <td
+          style="
+            width: 35pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            NV
+          </p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 23pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            -1.25
+          </p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            +0.60
+          </p>
+        </td>
+        <td
+          style="
+            width: 76pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 2pt;
+          "
+        >
+          <p class="s7" style="padding-left: 23pt; text-indent: 0pt; line-height: 14pt; text-align: left">-0.75</p>
+        </td>
+        <td
+          style="
+            width: 38pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 2pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 6pt; padding-right: 5pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            NV
+          </p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            +1.8
+          </p>
+        </td>
+        <td
+          style="
+            width: 77pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 23pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            -2.25
+          </p>
+        </td>
+        <td
+          style="
+            width: 79pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            +0.25
+          </p>
+        </td>
+      </tr>
+      <tr style="height: 15pt">
+        <td
+          style="
+            width: 35pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            ADD
+          </p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            +1.25
+          </p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            PD
+          </p>
+        </td>
+        <td
+          style="
+            width: 76pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 2pt;
+          "
+        >
+          <p class="s7" style="padding-left: 23pt; text-indent: 0pt; line-height: 14pt; text-align: left">-1.68</p>
+        </td>
+        <td
+          style="
+            width: 38pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 2pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 6pt; padding-right: 5pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            ADD
+          </p>
+        </td>
+        <td
+          style="
+            width: 78pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 24pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            -3.45
+          </p>
+        </td>
+        <td
+          style="
+            width: 77pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 24pt; padding-right: 23pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            PD
+          </p>
+        </td>
+        <td
+          style="
+            width: 79pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 23pt; padding-right: 24pt; text-indent: 0pt; line-height: 14pt; text-align: center">
+            +2.5
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <table style="border-collapse: collapse; margin-left: 5.4pt" cellspacing="0">
+      <tr style="height: 15pt">
+        <td
+          style="
+            width: 56pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">SL NO</p>
+        </td>
+        <td
+          style="
+            width: 291pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">PRODUCT DETAILS</p>
+        </td>
+        <td
+          style="
+            width: 85pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">QTY</p>
+        </td>
+        <td
+          style="
+            width: 106pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s6" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">PRICE</p>
+        </td>
+      </tr>
+      <tr style="height: 30pt">
+        <td
+          style="
+            width: 56pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">1</p>
+        </td>
+        <td
+          style="
+            width: 291pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 5pt; text-indent: 0pt; line-height: 15pt; text-align: left">
+            VINCENT CHASE EYEWEAR Unisex Adult Aviator Polarization Sunglasses
+          </p>
+        </td>
+        <td
+          style="
+            width: 85pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">2.00</p>
+        </td>
+        <td
+          style="
+            width: 106pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">200.00</p>
+        </td>
+      </tr>
+      <tr style="height: 30pt">
+        <td
+          style="
+            width: 56pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">2</p>
+        </td>
+        <td
+          style="
+            width: 291pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 5pt; text-indent: 0pt; line-height: 15pt; text-align: left">
+            LENSKART BLU | Zero Power Blue Cut Computer Glasses
+          </p>
+          <p class="s7" style="padding-left: 5pt; text-indent: 0pt; line-height: 13pt; text-align: left">
+            | Anti Glare, Lightweight |
+          </p>
+        </td>
+        <td
+          style="
+            width: 85pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">2.00</p>
+        </td>
+        <td
+          style="
+            width: 106pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s7" style="padding-left: 5pt; text-indent: 0pt; text-align: left">333.00</p>
+        </td>
+      </tr>
+    </table>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p class="s8" style="padding-top: 9pt; padding-left: 11pt; text-indent: 0pt; text-align: center">
+      Total Paid : 1,066.00 <span class="h4">Net Total Amount : 1,119.30</span>
+    </p>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p style="padding-top: 2pt; padding-left: 5pt; text-indent: 0pt; text-align: left">Working hours 9.30 AM to 8 PM</p>
+    <p style="padding-top: 9pt; padding-left: 5pt; text-indent: 0pt; text-align: left">
+      N.B: To be produce for collection. Please collect the article within 30 days from delivery date
+    </p>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p class="s9" style="padding-top: 2pt; text-indent: 0pt; text-align: right">AUTHORISED SIGNATORY</p>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p class="s10" style="padding-top: 2pt; padding-left: 11pt; text-indent: 0pt; text-align: center">SUNDAY HOLIDAY</p>
+  </body>
+</html>

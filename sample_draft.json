@@ -1,0 +1,49 @@
+{
+    "templateData": {
+        "InvoiceNumber": "INV-00245",
+        "InvDate": "03/07/2023",
+        "InvPaymentTerms": "03/07/2023",
+        "customer": {
+            "name": "John Doe",
+            "address": "1234 Main St",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94111",
+            "placeofsupply": "Kerala - 32"
+        },
+        "items": [
+            {
+                "sl": 1,
+                "name": "Item 1",
+                "HSN": "1234",
+                "description": "Description 1",
+                "qty": 1,
+                "price": 100,
+                "unit": "Nos",
+                "tax": 10,
+                "Tval": 10,
+                "Total": 110
+            },
+            {
+                "sl": 2,
+                "name": "Item 2",
+                "HSN": "1234",
+                "description": "Description 2",
+                "qty": 1,
+                "price": 100,
+                "unit": "Nos",
+                "tax": 10,
+                "Tval": 10,
+                "Total": 110
+            }
+        ],
+        "subtotal": 200,
+        "CGST@9%": 18,
+        "SGST@9%": 18,
+        "Total": 236,
+        "TotalPaid": 0,
+        "AmountDue": 236,
+        "AmountDueInWords": "Two Hundred Thirty Six Only",
+        "Terms": "1. Credits will only be authorized under the desecration of the Management."
+    }
+}
